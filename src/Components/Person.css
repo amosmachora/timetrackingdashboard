@@ -1,0 +1,59 @@
+.person__info {
+  background-color: var(--blue);
+  border-radius: 20px;
+  padding: 30px;
+  width: 100%;
+  margin-bottom: -30px;
+}
+.person__info > img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 40px;
+}
+.report-for {
+  font-size: calc(1rem - 2px);
+  color: lightgray;
+  margin-bottom: 10px;
+}
+.person-name {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.person__choices {
+  background-color: var(--darkBlue);
+  border-radius: 20px 20px 20px 20px;
+  padding: 50px 30px;
+}
+.person__choices > p {
+  color: var(--paleBlue);
+  font-size: 1rem;
+  margin: 10px 0px;
+}
+.person__choices > p:hover {
+  color: lightgray;
+  cursor: pointer;
+  transition: color 200ms ease-in;
+}
+
+@media screen and (max-width: 650px) {
+  .person__info {
+    max-width: unset;
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+  }
+  .person__text {
+    margin-left: 30px;
+  }
+  .person-name {
+    font-size: 1.5rem;
+  }
+  .person__choices {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}

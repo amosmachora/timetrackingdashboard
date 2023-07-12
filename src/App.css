@@ -1,0 +1,23 @@
+.App {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+}
+.left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1150px) {
+  .App {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .App {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+}
